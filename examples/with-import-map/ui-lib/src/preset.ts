@@ -27,10 +27,22 @@ const buttonRecipe = defineRecipe({
   },
 })
 
+const spinnerRecipe = defineRecipe({
+  className: 'spinner',
+  description: 'The styles for the Button component',
+  base: {
+    display: 'flex',
+    backgroundColor: "red",
+    width: "100px",
+    height: "100px",
+  },
+})
+
 export const preset = definePreset({
   theme: {
     recipes: {
       button: buttonRecipe,
+      spinner: spinnerRecipe
     },
   },
 })
